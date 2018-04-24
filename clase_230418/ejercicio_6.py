@@ -4,7 +4,7 @@
 # Realizar una calculadora con funciones
 # sumar, restar, divi, mult
 
-# import funciones.py ??????????????????
+from funciones import *
 
 def programa():
     while(True):
