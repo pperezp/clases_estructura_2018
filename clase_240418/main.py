@@ -3,14 +3,18 @@ from mensajes import *
 
 def main():
     bienvenido()
-    rut = input("Ingrese rut:")
-    password = input("Ingrese pass:")
 
-    nombre = verificar(rut, password)
+    while(True):
+        rut = input("Ingrese rut:")
+        password = input("Ingrese pass:")
 
-    if(nombre == -1):
-        error()
-    else:
-        mensaje_menu(nombre)
+        nombre = verificar(rut, password)
+
+        if(nombre != -1):
+            break
+        else:
+            error()
+
+    mensaje_menu(nombre)
 
 main()
