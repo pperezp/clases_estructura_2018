@@ -1,11 +1,11 @@
 def verificar(rut, password):
     if(rut == "11-1" and password == "longitud"):
-        return True
+        return "Erik Avello"
     elif(rut == "22-2" and password == "e"):
-        return True
+        return "Diego Lobos"
     elif(rut == "33-3" and password == "soybatman"):
-        return True
+        return "Fulvio"
     else:
-        return False
+        return -1 # no se encontró
 
 

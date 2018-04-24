@@ -7,5 +7,5 @@ def bienvenido():
 def error():
     print("Error al ingresar al sistema.")
 
-def mensaje_menu():
-    print("Hola usuari@!")
+def mensaje_menu(nombre):
+    print("Hola",nombre)

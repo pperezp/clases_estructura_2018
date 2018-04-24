@@ -6,11 +6,11 @@ def main():
     rut = input("Ingrese rut:")
     password = input("Ingrese pass:")
 
-    userOK = verificar(rut, password)
+    nombre = verificar(rut, password)
 
-    if(userOK):
-        mensaje_menu()
-    else:
+    if(nombre == -1):
         error()
+    else:
+        mensaje_menu(nombre)
 
 main()
