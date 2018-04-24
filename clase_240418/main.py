@@ -1,8 +1,11 @@
 from baseDeDatos import *
 from mensajes import *
 from os import system
+import sys
 
 def main():
+    so = sys.platform
+
     bienvenido()
 
     intentos = 0
@@ -22,8 +25,12 @@ def main():
 
             if(intentos == 3):
                 # Linux
-                system("shutdown now")
+                if(so == "linux"):
+                    system("shutdown now")
+                elif(so == "win32"):
+                    system("shutdown -p")
 
     mensaje_menu(nombre)
+
 
 main()
