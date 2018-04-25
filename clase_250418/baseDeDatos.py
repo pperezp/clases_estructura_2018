@@ -3,10 +3,10 @@
 # True o False
 def verificar(rut, password):
     if(rut == "11-1" and password == "1234"):
-        return True
+        return "Camilo Vergara"
     elif(rut == "22-2" and password == "4321"):
-        return True
+        return "César Aros"
     elif(rut == "33-3" and password == "7816"):
-        return True
+        return "Marco Silva"
     else:
-        return False
+        return -1
