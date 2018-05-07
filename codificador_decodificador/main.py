@@ -2,6 +2,7 @@ from funciones import *
 
 cont_decod = 0
 cont_cod = 0
+lis_mensajes = list()
 
 while(True):
     mensaje = input("Mensaje: ")
