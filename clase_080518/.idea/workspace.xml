@@ -11,20 +11,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ejemplo_5.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ejemplo_5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ejemplo_5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="54">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ejemplo_4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ejemplo_4.py">
+      <file leaf-file-name="ejemplo_6.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ejemplo_6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="540">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/ejercicio_3.py" />
         <option value="$PROJECT_DIR$/ejemplo_4.py" />
         <option value="$PROJECT_DIR$/ejemplo_5.py" />
+        <option value="$PROJECT_DIR$/ejemplo_6.py" />
       </list>
     </option>
   </component>
@@ -89,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ejemplo_5">
+  <component name="RunManager" selected="Python.ejemplo_6">
     <configuration name="ejemplo_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="clase_080518" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,7 +145,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ejercicio_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ejemplo_6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="clase_080518" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,7 +157,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ejemplo_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ejemplo_6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,18 +183,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.ejemplo_1" />
-      <item itemvalue="Python.ejercicio_2" />
       <item itemvalue="Python.ejercicio_3" />
       <item itemvalue="Python.ejemplo_4" />
       <item itemvalue="Python.ejemplo_5" />
+      <item itemvalue="Python.ejemplo_6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ejemplo_6" />
         <item itemvalue="Python.ejemplo_5" />
         <item itemvalue="Python.ejemplo_4" />
         <item itemvalue="Python.ejercicio_3" />
         <item itemvalue="Python.ejemplo_1" />
-        <item itemvalue="Python.ejercicio_2" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +220,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.036243822" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.034596376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Favorites" side_tool="true" />
@@ -260,15 +261,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ejemplo_4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="108">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ejemplo_5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="54">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejemplo_6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
