@@ -1,8 +1,48 @@
 lista_chistes = list()
 
+def cargar_chistes():
+    c = dict()
+
+    c["autor"] = "Autor 1"
+    c["anio"] = "1000"
+    c["tipo"] = "a"
+    c["contenido"] = "chiste 1 vaca"
+
+    lista_chistes.append(c)
+
+
+    c = dict()
+
+    c["autor"] = "Autor 2"
+    c["anio"] = "2000"
+    c["tipo"] = "b"
+    c["contenido"] = "chiste 2 perro"
+
+    lista_chistes.append(c)
+
+
+    c = dict()
+
+    c["autor"] = "Autor 3"
+    c["anio"] = "3000"
+    c["tipo"] = "c"
+    c["contenido"] = "chiste 3 perro"
+
+    lista_chistes.append(c)
+
+
+
+    c = dict()
+
+    c["autor"] = "Autor 4"
+    c["anio"] = "3000"
+    c["tipo"] = "a"
+    c["contenido"] = "chiste 4 hurón"
+
+    lista_chistes.append(c)
+
 def crear():
     chiste = dict() # chiste = {}
-
 
     while(True):
         chiste["autor"] = input("Nombre del autor del chiste:")
@@ -62,6 +102,7 @@ def mostrar():
         print("c.- Fome")
         op_tipo = input("Ingrese opción:")
 
+        print("----------------------------")
         for chi in lista_chistes:
             if(chi["tipo"] == op_tipo):
                 print("Autor:", chi["autor"])
@@ -82,14 +123,73 @@ def mostrar():
 
     elif(op_mostrar == "c"):
         anio = input("Ingrese el año:")
-        # ???
+
+        for ch in lista_chistes:
+            if(ch["anio"] == anio):
+                # acá poner to_do el art atack
+                print("Autor:", ch["autor"])
+                print("Año:", ch["anio"])
+
+                if (ch["tipo"] == "a"):
+                    print("Tipo: Chiste corto")
+                elif (ch["tipo"] == "b"):
+                    print("Tipo: Doble sentido")
+                else:
+                    print("Chiste fome")
+
+                print("Chiste: ")
+                print(ch["contenido"])
+                print("----------------------------")
+
+
 def buscar():
-    print("Buscar")
+    texto = input("Ingrese texto a buscar:")
+
+    texto = texto.lower().strip()
+
+    for chi in lista_chistes:
+        if(chi["contenido"].lower().__contains__(texto)):
+            print("Autor:", chi["autor"])
+            print("Año:", chi["anio"])
+
+            if (chi["tipo"] == "a"):
+                print("Tipo: Chiste corto")
+            elif (chi["tipo"] == "b"):
+                print("Tipo: Doble sentido")
+            else:
+                print("Chiste fome")
+
+            print("Chiste: ")
+            print(chi["contenido"])
+            print("----------------------------")
+
 
 def eliminar():
-    print("Eliminar")
+    if(lista_chistes.__len__() == 0):
+        print("No hay chistes para borrar")
+    else:
+        num_chiste = 1
+
+        for chi in lista_chistes:
+            print(str(num_chiste) + ".- " + chi["contenido"])
+            num_chiste += 1
+
+        print(str(num_chiste) + ".- Eliminar todos los chistes")
+
+        num_borrar = int(input("Número de chiste que quiere eliminar:"))
+        indice = num_borrar - 1
+
+        resp = input("¿Realmente desea borrar el chiste? [s/n] ")
+
+        if (resp.lower().strip() == "s"):
+            lista_chistes.pop(indice)
+
+
 
 def main():
+
+    cargar_chistes()
+
     while(True):
         print("-----------------------")
         print("      Chistes 2018     ")
