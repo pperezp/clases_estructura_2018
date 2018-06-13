@@ -8,22 +8,22 @@ def cargar_peliculas():
     p5 = dict()
 
     p1["isan"] = "111"
-    p1["nomb"] = "Película 1"
+    p1["nomb"] = "Matrix 1"
     p1["anio"] = "1000"
     p1["gene"] = "a"
 
     p2["isan"] = "222"
-    p2["nomb"] = "Película 2"
+    p2["nomb"] = "Matrix 2"
     p2["anio"] = "2000"
     p2["gene"] = "b"
 
     p3["isan"] = "333"
-    p3["nomb"] = "Película 3"
+    p3["nomb"] = "Shrek 3"
     p3["anio"] = "3000"
     p3["gene"] = "c"
 
     p4["isan"] = "444"
-    p4["nomb"] = "Película 4"
+    p4["nomb"] = "Shrek 4"
     p4["anio"] = "4000"
     p4["gene"] = "Infantil"
 
@@ -125,9 +125,32 @@ def buscar():
     limpiar()
     print("Buscar película")
 
+    texto = input("Búsqueda:")
+    texto = texto.lower()
+
+    for pel in lista_peliculas:
+        if(str(pel["nomb"]).lower().__contains__(texto)):
+            print("Película: "+pel["nomb"])
+            # acá debiese ir todos los datos
+            # de la película
+
 def eliminar():
     limpiar()
-    print("Eliminar películas")
+
+    if(lista_peliculas.__len__() == 0):
+        print("No hay películas")
+    else:
+        print("Eliminar películas")
+
+        # Como recorro una lista?????????
+        cont = 1
+        for peli in lista_peliculas:
+            print(cont, ".-", peli["nomb"])
+            cont += 1
+        num = int(input("Cual quiere borrar? "))
+        num = num - 1  # num -= 1
+
+        lista_peliculas.pop(num)
 
 def main():
     limpiar()
